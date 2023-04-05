@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un cafe con SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,700;1,900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body> 
+    <header class="header header-inicio">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafeteria" />
+                </div>
+                <nav class="nav-ppal">
+                    <a href="index.html">Inicio</a>
+                    <a class="activo" href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso del cafe</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="texto-header">
+                <h1>Una nueva experienciacada dia</h1>
+
+            </div>
+        </div>
+    </header>
+    <main class="contenedor contenido-ppal text-center">
+        <h2><span>Conoce más</span>sobre nosotros</h2>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source 
+                        srcset="./build/img/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source
+                        srcset="./build/img/nosotros_sidebar.webp"
+                        type="image/webp">
+                    <source
+                        srcset="./build/img/nosotros_sidebar.jpg"
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="./build/img/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quasi harum ullam, praesentium ab ipsam perferendis aspernatur iste rerum, accusantium sunt error animi. Doloremque et consequatur commodi sed voluptatibus praesentium.</p>
+                <blockquote>Excelente experiencia, recomendado!</blockquote>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quasi harum ullam, praesentium ab ipsam perferendis aspernatur iste rerum, accusantium sunt error animi. Doloremque et consequatur commodi sed voluptatibus praesentium.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-white">
+            <div class="footer-box ubicacion">
+                <h3>Ubicación</h3>
+                <p>9 de Julio 850</p>
+                <p>San Martin Mendoza</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>Tel. 3516-654555</p>
+                <a href="tel:+2634356144">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Jue: 11:00 - 22:00</p>
+                <p>Vie-Sab: 09:00 - 24:00</p>
+                <p>Domingo: Cerrado</p>
+                
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. Un café con SASS</p>
+    </footer>
+</body>
+</html>
